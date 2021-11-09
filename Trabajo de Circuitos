@@ -1,2 +1,27 @@
+Exprese cada uno de los números siguientes en notación científica
+	a)3000			b) 75000			c)2000000
+En la notación científica, siempre debe ser expresado al menos con un número entero
+	a) 3000=3*1000=3*〖10〗^3
+	b) 75000=7.5*10000=7.5*〖10〗^4
+	c) 2000000=2*1000000=2*〖10〗^6
 
+Exprese cada uno de los números siguientes en notación científica
+	8400			b) 99000			c)0.2*〖10〗^6
+En la notación científica, siempre debe ser expresado al menos con un número entero
+	8400=8.4*1000=8.4*〖10〗^3
+	99000=99*1000=99*〖10〗^3
+	0.2*〖10〗^6=2*〖10〗^(-1)*〖10〗^6=2*〖10〗^5
 
+Exprese cada uno de los números siguientes en notación científica
+	32*〖10〗^3			b)6800*〖10〗^(-6)			c)870*〖10〗^8
+En la notación científica, siempre debe ser expresado al menos con un número entero
+	32*〖10〗^3=3.2*10*〖10〗^3=3.2*〖10〗^4
+	6800*〖10〗^(-6)=6.8*1000*〖10〗^(-6)=6.8*〖10〗^3*〖10〗^(-6)=6.8*〖10〗^(-3)
+	870*〖10〗^8=8.7*100*〖10〗^8=8.7*〖10〗^2*〖10〗^8=8.7*〖10〗^10
+
+Exprese cada uno de los números siguientes como un número decimal regular
+	2.5*〖10〗^(-6)			b)5.0*〖10〗^2		c)3.9*〖10〗^(-1)
+Dependiendo del exponente ‘n’ al que se está elevando el número 10, se recorre el punto decimal ‘n’ espacios hacia la derecha (exponente positivo), o ‘n’ espacios hacia la izquierda (exponente negativo).
+	2.5*〖10〗^(-6)=2.5*1/〖10〗^6 =0.0000025
+	5.0*〖10〗^2=500
+	3.9*〖10〗^(-1)=3.9*1/10=0.39
