@@ -1,102 +1,145 @@
-# TRABAJO-DE-PRUEBA-1
-Notación científica
-1.- Exprese cada uno de los números siguientes en notación científica
-a.- 3000			b.- 75000			c.- 2000000
-En la notación científica, siempre debe ser expresado al menos con un número entero
-a.- 3000=3*1000=3*〖10〗^3
-b.- 75000=7.5*10000=7.5*〖10〗^4
-c.- 2000000=2*1000000=2*〖10〗^6
+# INFORME-DE-LABORATORIO-3
 
-3.- Exprese cada uno de los números siguientes en notación científica
-a.- 8400			b.- 99000			c.- 0.2*〖10〗^6
-En la notación científica, siempre debe ser expresado al menos con un número entero
-a.- 8400=8.4*1000=8.4*〖10〗^3
-b.- 99000=99*1000=99*〖10〗^3
-c.- 0.2*〖10〗^6=2*〖10〗^(-1)*〖10〗^6=2*〖10〗^5
+1) OBJETIVOS
 
-5.- Exprese cada uno de los números siguientes en notación científica
-a.- 32*〖10〗^3			b.- 6800*〖10〗^(-6)			c.- 870*〖10〗^8
-En la notación científica, siempre debe ser expresado al menos con un número entero
-a.- 32*〖10〗^3=3.2*10*〖10〗^3=3.2*〖10〗^4
-b.- 6800*〖10〗^(-6)=6.8*1000*〖10〗^(-6)=6.8*〖10〗^3*〖10〗^(-6)=6.8*〖10〗^(-3)
-c.- 870*〖10〗^8=8.7*100*〖10〗^8=8.7*〖10〗^2*〖10〗^8=8.7*〖10〗^10
+Objetivo general:
 
-7.- Exprese cada uno de los números siguientes como un número decimal regular
-a.- 2.5*〖10〗^(-6)			b.- 5.0*〖10〗^2		c.- 3.9*〖10〗^(-1)
-Dependiendo del exponente ‘n’ al que se está elevando el número 10, se recorre el punto decimal ‘n’ espacios hacia la derecha (exponente positivo), o ‘n’ espacios hacia la izquierda (exponente negativo).
-a.- 2.5*〖10〗^(-6)=2.5*1/〖10〗^6 =0.0000025
-b.- 5.0*〖10〗^2=500
-c.- 3.9*〖10〗^(-1)=3.9*1/10=0.39
+Comprobar experimentalmente el Análisis de Nodos.
 
+Objetivos especificos:
 
-9.- Sume los números siguientes
-a.- (9.2*〖10〗^6 )+(3.4*〖10〗^7)      b.- (5*〖10〗^3 )+(8.5*〖10〗^(-1))	     c.- (5.6*〖10〗^(-8) )+(4.6*〖10〗^(-9))
-Se deben igualar las potencias ‘n’ a las cuales está elevado el número 10, después, efectuar la suma de manera normal
-a)(9.2*〖10〗^6 )+(3.4*〖10〗^7 )=(9.2*〖10〗^6 )+(34*〖10〗^6 )=(〖10〗^6 )(34+9.2)=43.2*〖10〗^6
-b)(5*〖10〗^3 )+(8.5*〖10〗^(-1) )=(50000*〖10〗^(-1) )+(8.5*〖10〗^(-1) )=〖10〗^(-1) (5000+8.5)=5008.5*〖10〗^(-1)
-c)(5.6*〖10〗^(-8) )+(4.6*〖10〗^(-9) )=(5.6*〖10〗^(-8) )+(0.46*〖10〗^(-8) )=〖10〗^(-8) (5.6+0.46)=6.06*〖10〗^(-8)
+-Identificar el nodo de referencia del circuito, para realizar el análisis correcto de los nodos.
 
-11.- Realice las siguientes multiplicaciones:
-a.- (5*〖10〗^3)(4*〖10〗^5)       b.- (1.2*〖10〗^12)(3*〖10〗^2)	c.- (2.2*〖10〗^(-9))(7*〖10〗^(-6))
-Las multiplicaciones se realizan con el siguiente principio:
-- Las potencias de base 10, mantienen su base y se suman algebraicamente sus exponentes
-- Los otros números se multiplican de manera normal
+-Diseñar en algún simulador facilitado por el docente el esquema propuesto una tomar medidas de tensión en los nodos y verificar si sale lo mismo realizando teóricamente.
 
-a) (5*〖10〗^3 )(4*〖10〗^5 )=(5*4)(〖10〗^(3+5) )=20*〖10〗^8=2*〖10〗^9
-b)(1.2*〖10〗^12 )(3*〖10〗^2 )=(1.2*3)(〖10〗^(12+2) )=3.6*〖10〗^14
-c) (2.2*〖10〗^(-9) )(7*〖10〗^(-6) )=(2.2*7)(〖10〗^(-9-6) )=15.4*〖10〗^(-15)=1.54*〖10〗^(-14)
+-Realizar la comparacion de datos de forma indirecta y directa de los nodos.
 
-Notación de ingeniería y prefijos métricos
-13.- Exprese cada uno de los números siguientes en notación de ingeniería:
-a.- 89000		b.- 450000	      c.- 12040000000000
-En notación de ingeniería, los números deben estar expresados como un producto del número por 10 elevado a una potencia que sea múltiplo de 3.
-a) 89000=89*〖10〗^3
-b) 450000=450*〖10〗^3
-c) 12040000000000=12040*〖10〗^9
+2) Marco teorico
+
+El análisis de nodos se realiza mediante la aplicación de LCK, la cual es la ley de corrientes de Kirchhoff, ayuda a encontrar los voltajes de nodos del circuito. Para la construcción del sistema de ecuaciones, existe para una ecuación para cada nodo. Un nodo es cualquier punto en un circuito donde se encuentren conectados dos o más componentes, para su análisis se debe tener en cuenta que las corrientes que salen del nodo son positivas y las que entran son negativas.
+
+Dependiendo el tipo de circuito y su forma se debe seleccionar un nodo de referencia:
+
+•	Fuentes de corriente independientes
+
+• Fuentes de corriente controladas
+
+• Fuentes de voltaje independientes a tierra
+
+• Fuentes de voltaje independientes flotantes
+
+• Fuentes de voltaje controladas a tierra
+
+• Fuentes de voltaje controladas flotantes
 
 
+El método general que se aplica para el análisis de nodos, es el que tiene fuentes de corriente independientes y fuentes de voltaje independientes a tierra.
 
-15.- Exprese cada número en notación de ingeniería:
-a.- 2.35*〖10〗^5	               b.- 7.32*〖10〗^7		   c.- 0.00000000129
-En notación de ingeniería, los números deben estar expresados como un producto del número por 10 elevado a una potencia que sea múltiplo de 3.
-a.- 2.35*〖10〗^5=2.35*〖10〗^3*〖10〗^2=235*〖10〗^3
-b.- 7.32*〖10〗^7=7.32*〖10〗^6*10=73.2*〖10〗^6
-c.- 0.00000000129=1.29*〖10〗^(-9)
-
-17.- Sume los números siguientes y exprese cada resultado en notación de ingeniería:
-a.- (2.5*〖10〗^(-3) )+(4.6*〖10〗^(-3))
-b.- (68*〖10〗^6 )+(33*〖10〗^6)
-c.- (1.25*〖10〗^6 )+(250*〖10〗^3)
-Se igualan las potencias a un número múltiplo de 3, y se efectúan las sumas de manera normal.
-a.- (2.5*〖10〗^(-3) )+(4.6*〖10〗^(-3) )=〖10〗^(-3) (2.5+4.6)=7.1*〖10〗^(-3)
-b.- (68*〖10〗^6 )+(33*〖10〗^6 )=〖10〗^6 (68+33)=101*〖10〗^6
-c.-(1.25*〖10〗^6 )+(250*〖10〗^3 )=(1250*〖10〗^3 )+(250*〖10〗^3 )=〖10〗^3 (1250+250)=1500*〖10〗^3=1.5*〖10〗^6
-
-19.- Divida los números siguientes y exprese cada resultado en notación de ingeniería:
-a) 50÷(2.2*〖10〗^3)	b) (5*〖10〗^3)÷(25*〖10〗^(-6))	c)(560*〖10〗^3)÷(660*〖10〗^3)
-Las divisiones se realizan con el mismo principio que la multiplicación
-a)50÷(2.2*〖10〗^3 )=22.72*〖10〗^(-3)
-b)(5*〖10〗^3 )÷(25*〖10〗^(-6) )=0.2*〖10〗^(3+6)=0.2*〖10〗^9
-c)(560*〖10〗^3 )÷(660*〖10〗^3 )=0.8484…*〖10〗^0=848.48*〖10〗^(-3)
-
-21.- Exprese cada número del problema 15 en amperes por medio de un prefijo métrico.
-a.- 2.35*〖10〗^5  A	     b.- 7.32*〖10〗^(7 ) A		c.- 0.00000000129 A
-El resultado se expresa como prefijo métrico
-a.- 2.35*〖10〗^5  A=2.35*〖10〗^3*〖10〗^2  A=235*〖10〗^3 A=235 KA
-b.-7.32*〖10〗^7  A=7.32*〖10〗^6*10 A=73.2*〖10〗^6  A=73.2 MA
-c.-0.00000000129 A=1.29*〖10〗^(-9)  A=1.29 nA
+Pasos a seguir para el teorema de nodos:
 
 
-23.- Exprese cada una de las cantidades siguientes por medio de prefijos métricos:
-a) 3*〖10〗^(-6) F		b)3.3*〖10〗^6 Ω		c) 350*〖10〗^(-9)  A
+-Asigna las tensiones a los nodos restantes y se asignan respecto al nodo de referencia.
 
-a) 3*〖10〗^(-6) F=3 uF
-b) 3.3*〖10〗^6 Ω=3.3MΩ 
-c) 350*〖10〗^(-9)  A=350nA
+-Se dibuja la trayectoria de corriente en cada rama, tratando de trazar trayectorias que vayan hacia el nodo de referencia o tierra.
 
-25.- Exprese cada cantidad convirtiendo el prefijo métrico en una potencia de 10:
-a) 7.5 pA		b)3.3 GHz		c)280 nW
+-Después se debe aplicar LCK a cada uno de los nodos de no referencia, se utiliza la ley de ohm para expresar la corriente en las ramas en términos de las tensiones de los nodos.
 
-a.- 7.5 pA=7.5*〖10〗^(-12)  A
-b.- 3.3 GHz=3.3*〖10〗^9  Hz
-c.- 280 nW=280*〖10〗^(-9)  nW
+-Resolver el sistema de ecuaciones de los nodos, el resultado será las tenciones de un nodo desconocido.
+
+![](lab_3/MAPA_LAB_3.png)
+
+
+3) Explicacion de procedimiento
+
+El nodo 1 es el que se encuentra de la resistencia de 1.8 kohm y entre las resistencias en paralelo de 2.2kohm y 470 ohm, y el nodo numero dos es aque que termina en la ressitencia 2.2kohm y las resistencias en paralelo de 1.5kohm y  3.9kohm
+
+Planteamos la ecuacion de I1=-I2-I3, por tal motivo que las intensidades o corrientes que salen son negativas y la que entra es positiva. Por lo tanto reescribimos la ecuacion en funcion de sus resistencias y voltajes.
+ 
+Plantenado las ecuaciones para los dos nodos realizamos un sistema de ecuaciones para encontrar el voltaje.
+
+
+![](lab_3/Analisis_circuito.jpg)
+
+
+Cálculos:
+
+I1+I2+I3=0
+((V1-12)/1800)+(V1/470)+((V1-V2)/2200)=0
+(V1-12)+V1(1800/470)+1800/2200 (V1-V2)=0
+22(V1-12)+V1*3960/47+18(V1-V2)=0
+1034(V1-12)+3960V1+846(V1-V2)=0
+1034 V1-12408+3960 V1+846 V1-846 V2=0
+▭1 5840 V1-846 V2=12408
+
+I4+I5+I6=0
+((V2-V1)/2200)+V2/3900+(V2-8)/1500=0
+(V2-V1)+2200/3900 V2+2200/1500 (V2-8)=0
+15(V2-V1)+330/39 V2+22(V2-8)=0
+195(V2-V1)+110V2+286(V2-8)=0
+195 V2-195 V1+110 V2+286 V2=2288
+▭2 591 V2-195 V1=2288
+
+Utilizando sistema de ecuaciones:
+5840 V1-846 V2=12408          *(195)
+-195 V1+591 V2=2288            *(584)
+
+1138800 V1-164970 V2=2419560
+-1138800 V1+3451440 V2=13361920
+Sumando las dos expresiones:
+3286470 V2=15781480
+V2=4,8019 V
+Reemplazando en ▭1
+5840 V1-846(4,8019)=12408
+5840 V1=846(4,8019)+12408
+5840 V1=16470,45
+V1=2,8202 V
+
+![](lab_3/voltaje.jpeg)
+
+
+Intensidad:
+
+![](lab_3/intensida.jpeg)
+
+Simulacion en Tinkercard:
+
+![](lab_3/tinker_volta.jpeg)
+
+
+4) Respuesta a interrogantes y cálculo de error.
+
+Resultados:
+
+![](lab_3/tabla.png)
+
+
+Se logro comprabar que lso resutlados del modo simulado es igual a los valores que encontramos dentro de el analisis por LCK, los cuales fueron evaluados por un sistema de ecuaciones, y por lo tanto obtuvimos los voltajes en los nodos correspondientes al circuito planteado.
+
+El calculo de error, si se lo evalua, este tendra un resultado de cero ya que corresponde a los valores exactos, tanto medidos, simulados y calculados.
+
+5) Video
+
+https://youtu.be/BDATG5Zll0w
+
+
+6) Conclusiones.
+
+-Diseñamos el circuito con la ayuda del simulador y ademas tomamos medidas de tensión en nodos y verificamos que salio lo mismo realizando de manera teórica como lo indica el cuadro.
+
+-Se analizaron los circuitos en serie, con uso de las leyes de Ohm y Kirchhoff, así se lograron resolver los problemas en circuitos eléctricos.
+
+-El calculo de los voltajes dentro de los nodos se utiliza para ver si el estado del circuito está abierto o cerrado, para no ocasionar cortocircuitos o caidas de voltaje.
+
+
+
+7) Bibliografia
+
+- M. (2021b, abril 2). Teorema de Nodos. MiElectrónicaFácil.com. Recuperado 1 de diciembre de 2021, de https://mielectronicafacil.com/analisis-de-circuitos/teorema-de-nodos/#pasos-del-teorema-de-nodos
+
+-Salazar, A. (2012). 3. Análisis Por Nodos Y Mallas 3.1. 35–62. http://wwwprof.uniandes.edu.co/~ant-sala/cursos/FDC/Contenidos/03_Analisis_por_Nodos_y_Mallas.pdf
+
+
+
+
+
+
